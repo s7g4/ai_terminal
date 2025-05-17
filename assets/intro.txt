@@ -1,0 +1,54 @@
+*************************************************************
+*                                                           *
+*   ███████╗ █████╗ ███████╗███████╗██╗   ██╗██╗███████╗ *
+*   ██╔════╝██╔══██╗██╔════╝██╔════╝██║   ██║██║██╔════╝ *
+*   █████╗  ███████║█████╗  █████╗  ██║   ██║██║███████╗ *
+*   ██╔══╝  ██╔══██║██╔══╝  ██╔══╝  ██║   ██║██║╚════██╗*
+*   ███████╗██║  ██║███████╗███████╗╚██████╔╝██║███████╗*
+*   ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝ ╚═════╝ ╚═╝╚══════╝*
+*                                                           *
+*************************************************************
+
+Welcome to Jarvis AI Terminal!
+
+Your intelligent assistant, designed to assist with:
+- Task management (e.g., reminders, emails, and calendar management)
+- Information retrieval (web search, weather updates, knowledge lookup)
+- Personalization (mood, voice, and personality customization)
+- Development & productivity tools (code analysis, git helper, and more)
+
+Version: 1.0.0 | Created: 2025-04-12
+
+*************************************************************
+*                                                           *
+*   [System Info]                                           *
+*   AI Engine: Jarvis AI Terminal                          *
+*   Current Mood: [Neutral]                                 *
+*   Personality: Adaptive, Confident, and Supportive        *
+*   Voice Engine: pyttsx3                                  *
+*   Interaction Style: Concise, Intelligent, and Friendly   *
+*                                                           *
+*************************************************************
+
+Your assistant is here to help. Ready to begin, Sir?
+-------------------------------------------------------
+Commands you can try:
+1. "Show me the weather."
+2. "Check my emails."
+3. "Play some music."
+4. "Help me with my code."
+5. "Create a new project."
+
+Type 'help' for more options.
+
+Remember, I'm always learning from interactions. You can modify my mood, tone, and style anytime to better fit your needs!
+
+Current settings:
+- Mood: Neutral
+- Voice Rate: 180 words per minute
+- Volume: Maximum
+- Confidence: High
+- Assistance Mode: Active
+
+-------------------------------------------------------
+Ready to assist. Let's make it happen!

@@ -1,0 +1,73 @@
+# Core AI Libraries and Large Language Model (LLM) Integration
+openai==0.26.0  # Downgraded for Python 3.7 compatibility
+anthropic==0.9.0  # Downgraded for Python 3.7 compatibility
+transformers==4.25.1  # Latest version supporting Python 3.7
+torch==1.13.1  # Latest version supporting Python 3.7
+
+# Web search integration (Google Custom Search API)
+google-api-python-client==2.61.0
+google-auth==2.19.0
+
+# Text-to-Speech Libraries
+pyttsx3==2.90
+gTTS==2.2.4
+sounddevice==0.4.6
+
+# Web scraping and dynamic data retrieval (Optional but useful for plugins like Web Search)
+beautifulsoup4==4.11.1
+requests==2.28.1
+
+# For loading environment variables from .env files
+python-dotenv==0.21.1
+
+# Plugin System (Flask framework for plugins)
+flask==2.2.2
+flask-cors==3.0.10
+Flask-SocketIO==5.3.0
+
+# CLI and Command-line Interface
+argparse==1.4.0
+colorama==0.4.5
+click==8.1.3
+
+# Data Handling and Persistence
+json5==0.9.6
+tinydb==4.4.0
+
+# Logging and Error Handling
+loguru==0.6.0
+
+# Audio input/output
+SpeechRecognition==3.9.0
+PyAudio==0.2.14
+sounddevice==0.4.6
+
+# For testing (optional but useful for unit tests)
+pytest==7.2.2
+mock==5.0.0
+
+# Virtual Environment Creation (Ensure isolation of the environment)
+virtualenv==20.16.4
+
+# For Plugin Support (Handling dynamic updates, API integrations)
+requests==2.28.1
+Flask-SQLAlchemy==2.5.1
+
+# For memory and data handling (interfacing with memory.json and config.json)
+jsonschema==4.5.1
+
+# For web scraping and interacting with APIs (Dynamic response to plugin data)
+selenium==4.8.2
+
+# For async and concurrent requests (improves plugin speed)
+aiohttp==3.8.3
+
+# Command-line tools and auto-installation (support for commands and management)
+pip==23.1.2
+setuptools==65.5.0
+
+# For managing complex task flow (optional)
+celery==5.2.7
+
+# For various background tasks, notifications, and event-driven programming
+apscheduler==3.10.0

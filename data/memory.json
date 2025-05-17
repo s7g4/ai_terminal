@@ -1,0 +1,137 @@
+{
+  "_meta": {
+    "created_at": "2025-04-12T12:00:00",
+    "updated_at": "2025-04-12T12:00:00",
+    "version": "1.0.0",
+    "description": "Memory storage for Jarvis AI Terminal. Stores user interactions and preferences."
+  },
+  "user_data": {
+    "user_name": "Tony Stark",
+    "user_id": "12345",
+    "preferences": {
+      "voice": "Jarvis",
+      "tone": "confident",
+      "language": "English",
+      "mood": "neutral"
+    },
+    "interaction_history": [
+      {
+        "timestamp": "2025-04-12T12:05:00",
+        "command": "play music",
+        "response": "Playing your favorite playlist",
+        "context": {
+          "mood": "happy",
+          "current_task": "entertainment"
+        }
+      },
+      {
+        "timestamp": "2025-04-12T12:10:00",
+        "command": "show weather",
+        "response": "It's 72\u00b0F and sunny outside.",
+        "context": {
+          "mood": "neutral",
+          "current_task": "productivity"
+        }
+      }
+    ]
+  },
+  "task_memory": {
+    "pending_tasks": [
+      {
+        "task_id": "task_1",
+        "task_name": "Build Next.js app",
+        "status": "in_progress",
+        "created_at": "2025-04-12T12:15:00",
+        "due_date": "2025-04-14T12:00:00",
+        "priority": "high"
+      },
+      {
+        "task_id": "task_2",
+        "task_name": "Email response to client",
+        "status": "pending",
+        "created_at": "2025-04-12T12:20:00",
+        "due_date": "2025-04-12T15:00:00",
+        "priority": "medium"
+      }
+    ]
+  },
+  "plugin_usage": {
+    "weather_plugin": {
+      "usage_count": 10,
+      "last_used": "2025-04-12T12:10:00"
+    },
+    "music_plugin": {
+      "usage_count": 5,
+      "last_used": "2025-04-12T12:05:00"
+    },
+    "email_manager_plugin": {
+      "usage_count": 3,
+      "last_used": "2025-04-12T12:20:00"
+    }
+  },
+  "ai_feedback": {
+    "learning_rate": 0.8,
+    "feedback_history": [
+      {
+        "timestamp": "2025-04-12T12:15:00",
+        "user_feedback": "The music playlist is great!",
+        "ai_action": "Play music"
+      },
+      {
+        "timestamp": "2025-04-12T12:18:00",
+        "user_feedback": "The weather info is accurate.",
+        "ai_action": "Show weather"
+      }
+    ]
+  },
+  "context": [
+    {
+      "timestamp": "2025-04-12T16:52:36.663364",
+      "user": "test input",
+      "ai": "test response"
+    },
+    {
+      "timestamp": "2025-05-16T10:40:13.710162",
+      "user": "test command",
+      "ai": ""
+    },
+    {
+      "timestamp": "2025-05-16T10:40:13.711455",
+      "user": "",
+      "ai": "response"
+    },
+    {
+      "timestamp": "2025-05-16T10:40:13.768720",
+      "user": "test command",
+      "ai": ""
+    },
+    {
+      "timestamp": "2025-05-16T10:40:13.770952",
+      "user": "",
+      "ai": "response"
+    },
+    {
+      "timestamp": "2025-05-16T10:43:29.202372",
+      "user": "test command",
+      "ai": ""
+    },
+    {
+      "timestamp": "2025-05-16T10:43:29.204275",
+      "user": "",
+      "ai": "response"
+    },
+    {
+      "timestamp": "2025-05-16T10:43:29.262103",
+      "user": "test command",
+      "ai": ""
+    },
+    {
+      "timestamp": "2025-05-16T10:43:29.267800",
+      "user": "",
+      "ai": "response"
+    }
+  ],
+  "preferences": {
+    "audio_device_index": 0
+  }
+}

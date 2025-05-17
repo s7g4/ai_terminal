@@ -1,0 +1,10 @@
+# Basic ALSA configuration to set default PCM device to PipeWire
+pcm.!default {
+    type plug
+    slave.pcm "pipewire"
+}
+
+ctl.!default {
+    type plug
+    slave.pcm "pipewire"
+}
