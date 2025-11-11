@@ -1,8 +1,7 @@
 # Core AI Libraries and Large Language Model (LLM) Integration
-openai==0.26.0  # Downgraded for Python 3.7 compatibility
-anthropic==0.9.0  # Downgraded for Python 3.7 compatibility
-transformers==4.25.1  # Latest version supporting Python 3.7
-torch==1.13.1  # Latest version supporting Python 3.7
+openai==1.0.0  # Updated for modern API
+anthropic==0.30.0  # Updated version
+# transformers and torch removed for compatibility; install if needed for plugins
 
 # Web search integration (Google Custom Search API)
 google-api-python-client==2.61.0
@@ -39,7 +38,7 @@ loguru==0.6.0
 
 # Audio input/output
 SpeechRecognition==3.9.0
-PyAudio==0.2.14
+# PyAudio==0.2.14  # Removed due to build issues on Windows
 sounddevice==0.4.6
 
 # For testing (optional but useful for unit tests)
@@ -59,15 +58,19 @@ jsonschema==4.5.1
 # For web scraping and interacting with APIs (Dynamic response to plugin data)
 selenium==4.8.2
 
-# For async and concurrent requests (improves plugin speed)
-aiohttp==3.8.3
+
 
 # Command-line tools and auto-installation (support for commands and management)
-pip==23.1.2
-setuptools==65.5.0
+# pip and setuptools managed by system
 
 # For managing complex task flow (optional)
 celery==5.2.7
 
 # For various background tasks, notifications, and event-driven programming
 apscheduler==3.10.0
+
+# Ollama client for local LLM integration (free alternative to OpenAI)
+ollama==0.3.3
+
+# For task scheduling (used in task_scheduler plugin)
+schedule==1.2.2

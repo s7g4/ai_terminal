@@ -285,6 +285,40 @@ MIT License. See LICENSE for more information.
 
 - OpenAI GPT-4 for natural language understanding.
 - Claude-3-Sonnet by Anthropic for advanced AI interaction.
+- Ollama for local LLM integration (e.g., llama3.2).
 - pyttsx3 and gTTS for text-to-speech functionality.
 - Flask for building the plugin system.
 - BeautifulSoup4 and Selenium for web scraping capabilities.
+
+## Roadmap and Future Improvements
+
+The project is functional in text mode with Ollama integration, but several areas remain for completion and enhancement. Below is a list of pending tasks and suggested improvements:
+
+### Pending Tasks:
+- **Virtual Environment Setup**: Re-enable and fix the `check_environment()` function in `main.py` to properly detect and guide setup of `jarvis_env` on Windows (address permission/copy errors during venv creation).
+- **Voice Mode Compatibility**: Resolve Python 3.14 incompatibilities (e.g., Pydantic V1 warnings in OpenAI, skipped 'voice_assistant' plugin). Test and fully implement speech-to-text (SpeechRecognition) and text-to-speech (pyttsx3/gTTS) with microphone input using sounddevice or PyAudio alternatives.
+- **Audio Setup**: Integrate and automate `setup_audio.sh` for Windows (e.g., via PowerShell equivalent). Fix device selection in `core/voice.py` and `core/test_mic.py` for PipeWire/PulseAudio on Linux and WASAPI on Windows.
+- **Plugin Fixes**:
+  - Test and fix all plugins (e.g., email_manager requires API keys; music_player may need local file access or streaming API).
+  - Implement missing plugins like voice_assistant.
+  - Add error handling for plugin execution failures.
+- **Testing Coverage**: Expand unit tests in `tests/` to cover brain.py, voice.py, plugin_manager.py, and end-to-end interactions. Run `pytest` and aim for 80%+ coverage.
+- **Memory and Config Persistence**: Ensure `data/memory.json` and `data/personality.json` handle concurrent access and backups. Add migration for config versions.
+- **Ollama Integration**: Document Ollama setup (e.g., `ollama pull llama3.2`) and fallback to other models if local server is unavailable.
+
+### Suggested Improvements:
+- **Multi-Model Support**: Enhance `core/brain.py` to dynamically switch between Ollama (local), OpenAI, and Anthropic based on config or availability. Add streaming responses for better UX.
+- **Error Handling and Logging**: Improve global exception handling in main.py and plugins. Use loguru more extensively for structured logs in `logs/jarvis_terminal.log`.
+- **Security Enhancements**: Sanitize user inputs to prevent injection in plugins (e.g., system_control, file_manager). Add API key validation and .env loading.
+- **Performance Optimizations**: Cache AI responses, limit context history in brain.py, and optimize plugin loading (lazy-load non-essential plugins).
+- **UI/UX Enhancements**: Add a simple TUI (e.g., using rich or textual) for better text mode interaction. Support command history and tab completion.
+- **Plugin Expansion**: Add new plugins for code execution (sandboxed), calendar integration (Google Calendar API), or image generation (DALL-E via OpenAI).
+- **Documentation**: 
+  - Add inline docstrings to all modules.
+  - Create a plugins.md file detailing each plugin's commands and dependencies.
+  - Update installation for Windows-specific issues (e.g., Git Bash vs. CMD).
+- **Deployment and Packaging**: Create a setup.py or pyproject.toml for pip installable package. Add Docker support for easy deployment.
+- **Cross-Platform Compatibility**: Test on macOS/Linux/Windows fully, especially audio and venv creation.
+- **Advanced Features**: Implement long-term memory with vector embeddings (e.g., via FAISS), multi-turn conversations, or integration with external tools like VSCode extensions.
+
+Contributions to these areas are welcome! Prioritize voice mode and testing for a more complete release.

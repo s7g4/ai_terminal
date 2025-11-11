@@ -12,6 +12,8 @@ class EmailManager:
         config = load_config()
         self.email_address = config.get("email_address")
         self.email_password = config.get("email_password")
+        if not self.email_address or not self.email_password:
+            logger.warning("Email credentials not configured. Set 'email_address' and 'email_password' in config.json.")
 
     def run(self, *args, **kwargs):
         """Main execution method for the plugin"""

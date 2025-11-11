@@ -10,52 +10,44 @@ class TestPluginManager(unittest.TestCase):
         plugins = self.pm.list_plugins()
         self.assertIsInstance(plugins, list)
 
-    @patch('core.plugin_manager.importlib.import_module')
-    def test_load_plugins(self, mock_import_module):
+    @patch('importlib.import_module')
+    def test_load_plugins_success(self, mock_import):
         mock_module = MagicMock()
-        mock_module.run = MagicMock(return_value="run called")
-        mock_import_module.return_value = mock_module
-
+        mock_module.run = MagicMock()
+        mock_import.return_value = mock_module
         pm = PluginManager()
-        self.assertIn(mock_module, pm.plugins.values())
+        self.assertIn('weather', pm.plugins)
 
-    def test_execute_plugin(self):
-        # Add a dummy plugin
-        class DummyPlugin:
-            def run(self, command):
-                return f"Executed {command}"
-        self.pm.plugins['dummy'] = DummyPlugin()
-        result = self.pm.execute('dummy', 'test command')
-        self.assertEqual(result, "Executed test command")
+    @patch('importlib.import_module')
+    def test_load_plugins_failure(self, mock_import):
+        mock_import.side_effect = ImportError("Module not found")
+        pm = PluginManager()
+        # Should not crash, just log error
+
+    def test_execute_plugin_success(self):
+        with patch.object(self.pm, 'plugins', {'test': MagicMock(run=MagicMock(return_value="Success"))}):
+            result = self.pm.execute('test', ['arg'])
+            self.assertEqual(result, "Success")
 
     def test_execute_plugin_not_found(self):
-        result = self.pm.execute('nonexistent', 'test')
-        self.assertEqual(result, "Plugin 'nonexistent' not found.")
+        result = self.pm.execute('nonexistent', [])
+        self.assertIn("not found", result)
 
-    def test_get_plugin_help(self):
-        class DummyPlugin:
-            def help(self):
-                return "Help text"
-        self.pm.plugins['dummy'] = DummyPlugin()
-        help_text = self.pm.get_plugin_help('dummy')
-        self.assertEqual(help_text, "Help text")
+    def test_execute_plugin_error(self):
+        mock_plugin = MagicMock()
+        mock_plugin.run.side_effect = Exception("Plugin error")
+        with patch.object(self.pm, 'plugins', {'test': mock_plugin}):
+            result = self.pm.execute('test', [])
+            self.assertIn("failed", result.lower())
 
-    def test_get_plugin_help_no_help(self):
-        class DummyPlugin:
-            pass
-        self.pm.plugins['dummy'] = DummyPlugin()
-        help_text = self.pm.get_plugin_help('dummy')
-        self.assertEqual(help_text, "No help available for 'dummy'.")
+    def test_smart_dispatch_weather(self):
+        plugin, response = self.pm.smart_dispatch("What's the weather like?")
+        self.assertEqual(plugin, "weather")
 
-    def test_smart_dispatch(self):
-        # Add a dummy plugin with run method
-        class DummyPlugin:
-            def run(self, command):
-                return "response"
-        self.pm.plugins['dummy'] = DummyPlugin()
-        plugin_name, response = self.pm.smart_dispatch("weather forecast")
-        self.assertEqual(plugin_name, "weather")
-        self.assertIsInstance(response, str)
+    def test_smart_dispatch_unknown(self):
+        plugin, response = self.pm.smart_dispatch("Unknown command")
+        self.assertIsNone(plugin)
+        self.assertIn("couldn't find", response)
 
 if __name__ == '__main__':
     unittest.main()

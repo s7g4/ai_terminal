@@ -47,7 +47,9 @@ class MusicPlayerPlugin:
         """Get new music releases from Spotify API"""
         try:
             config = load_config()
-            token = config.get("spotify_token", "YOUR_SPOTIFY_TOKEN")
+            token = config.get("spotify_token")
+            if not token or token == "YOUR_SPOTIFY_TOKEN":
+                return "Spotify API not configured. Set 'spotify_token' in config.json for new releases."
             response = requests.get(
                 "https://api.spotify.com/v1/browse/new-releases",
                 headers={"Authorization": f"Bearer {token}"}

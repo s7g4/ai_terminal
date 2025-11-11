@@ -1,0 +1,17 @@
+{
+  "use_model": "ollama",
+  "ollama_model": "llama3.2",
+  "openai_api_key": "",
+  "anthropic_api_key": "",
+  "llm_model": "gpt-3.5-turbo",
+  "voice_rate": 150,
+  "voice_volume": 1.0,
+  "memory_limit": 20,
+  "log_level": "INFO",
+  "news_api_key": "YOUR_NEWS_API_KEY",
+  "weather_api_key": "YOUR_WEATHER_API_KEY",
+  "email_smtp_server": "smtp.gmail.com",
+  "email_smtp_port": 587,
+  "email_username": "your_email@gmail.com",
+  "email_password": "your_app_password"
+}

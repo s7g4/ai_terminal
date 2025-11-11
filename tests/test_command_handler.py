@@ -1,10 +1,12 @@
 import unittest
 from unittest.mock import patch, MagicMock
 from core.command_handler import CommandHandler
+import sys
 
 class TestCommandHandler(unittest.TestCase):
     def setUp(self):
-        self.ch = CommandHandler()
+        with patch('core.voice.Voice'):
+            self.ch = CommandHandler()
 
     @patch.object(CommandHandler, 'respond')
     def test_handle_empty_command(self, mock_respond):

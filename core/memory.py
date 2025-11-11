@@ -125,6 +125,12 @@ def save_memory(memory_data):
     memory.save()
 
 def update_memory(memory_data, user_input, ai_response):
-    memory = Memory()
-    memory.memory = memory_data
-    memory.update(user_input, ai_response)
+    if "context" not in memory_data:
+        memory_data["context"] = []
+    memory_data["context"].append({
+        "timestamp": datetime.now().isoformat(),
+        "user": user_input,
+        "ai": ai_response
+    })
+    # Keep only last 20 interactions
+    memory_data["context"] = memory_data["context"][-20:]

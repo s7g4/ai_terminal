@@ -26,6 +26,10 @@ class PluginManager:
             for filename in os.listdir(PLUGINS_DIR):
                 if filename.endswith(".py") and not filename.startswith("__"):
                     plugin_name = filename[:-3]
+                    # Skip voice_assistant plugin due to Python 3.14 compatibility issues
+                    if plugin_name == 'voice_assistant':
+                        logger.info(f"Skipped '{plugin_name}' (incompatible with Python 3.14)")
+                        continue
                     try:
                         module = importlib.import_module(f"plugins.{plugin_name}")
                         if hasattr(module, "run"):
@@ -54,7 +58,7 @@ class PluginManager:
         except Exception as e:
             logger.error(f"Error running plugin '{plugin_name}': {e}")
             traceback.print_exc()
-            return f"Error: {e}"
+            return f"Plugin execution failed: {e}. Check logs for details."
 
     def get_plugin_help(self, plugin_name):
         """Return help text if available in the plugin"""
