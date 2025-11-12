@@ -98,4 +98,4 @@ class Brain:
 
         except Exception as e:
             logger.error(f"Error: {e}")
-            return "⚠️ My mind is offline at the moment. Try again later."
+            return "My mind is offline at the moment. Try again later."

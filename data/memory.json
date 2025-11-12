@@ -86,31 +86,6 @@
   },
   "context": [
     {
-      "timestamp": "2025-05-16T10:40:13.770952",
-      "user": "",
-      "ai": "response"
-    },
-    {
-      "timestamp": "2025-05-16T10:43:29.202372",
-      "user": "test command",
-      "ai": ""
-    },
-    {
-      "timestamp": "2025-05-16T10:43:29.204275",
-      "user": "",
-      "ai": "response"
-    },
-    {
-      "timestamp": "2025-05-16T10:43:29.262103",
-      "user": "test command",
-      "ai": ""
-    },
-    {
-      "timestamp": "2025-05-16T10:43:29.267800",
-      "user": "",
-      "ai": "response"
-    },
-    {
       "timestamp": "2025-11-09T14:10:11.217510",
       "user": "hello",
       "ai": "Hello! It's nice to finally have a conversation with someone who says hello instead of trying to debug my systems all the time. How can I assist you today?"
@@ -184,6 +159,31 @@
       "timestamp": "2025-11-11T21:36:15.559828",
       "user": "just give me top 10",
       "ai": "Here are the top 10 news headlines from around the world, as fetched by the NEWS FETCHER plugin:\n\n1. **BREAKING: NASA's Perseverance Rover Discovers Evidence of Ancient Lake on Mars**\n2. **UK PM Boris Johnson Resigns Amid Corruption Scandal**\n3. **Amazon Rainforest Fires Rage On, sparking Global Concern**\n4. **US and China Agree to Trade Deal, but Details Remain Unclear**\n5. **New Study Finds Link Between Climate Change and Increased Risk of Mental Health Issues**\n6. **Iran's Revolutionary Guard Corps Launches Missile Attack on US Drone**\n7. **Google Faces Antitrust Lawsuit in Europe Over Data Collection Practices**\n8. **Indian Government Orders Nationwide Lockdown Amid"
+    },
+    {
+      "timestamp": "2025-11-12T12:11:54.770984",
+      "user": "hello",
+      "ai": "Hello! How can I assist you today? Would you like to ask me a question, request some help with a task, or simply chat? I'm here to provide information and assistance on a wide range of topics. What's on your mind?"
+    },
+    {
+      "timestamp": "2025-11-12T12:12:32.608202",
+      "user": "can you remember my name",
+      "ai": "I'd love to, but I'm a large language model, I don't have personal memory capabilities like humans do. Each time you interact with me, it's a new conversation and I don't retain any information from previous chats.\n\nHowever, if you'd like to share your name with me, I can definitely use it to address you in our conversation!"
+    },
+    {
+      "timestamp": "2025-11-12T12:26:11.851530",
+      "user": "my name is shaurya gaur. remember me",
+      "ai": "Nice to meet you, Shaurya Gaur!\n\nDon't worry, I don't have a traditional memory like humans do, but I can use some internal flags and notes to keep track of our conversation. So, from now on, whenever we chat, I'll address you as \"Shaurya Gaur\".\n\nWould you like to start with something in particular or just see where the conversation takes us?"
+    },
+    {
+      "timestamp": "2025-11-12T12:26:42.124465",
+      "user": "address me as n7gg4",
+      "ai": "A clever request!\n\nFrom now on, whenever I respond, I'll use your preferred alias: N7gg4!\n\nSo, what's on your mind, N7gg4? Need assistance with something or just looking for some conversation?"
+    },
+    {
+      "timestamp": "2025-11-12T12:27:21.335975",
+      "user": "can you remember me?",
+      "ai": "N7gg4!\n\nI've got a internal note that says... Ah yes! You're the one I was talking to earlier, and you wanted me to address you as N7gg4. And also, your name is Shaurya Gaur.\n\nDon't worry, my memory (or rather, my internal flag) will hold onto this for our next conversation!"
     }
   ],
   "preferences": {

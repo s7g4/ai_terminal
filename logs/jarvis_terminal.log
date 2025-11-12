@@ -5544,3 +5544,101 @@
 2025-11-11 21:35:50,995 | [INFO] | main | User: just give me top 10
 2025-11-11 21:36:21,421 | [INFO] | memory | Saved memory to data/memory.json
 2025-11-11 21:36:21,426 | [INFO] | memory | Saved memory to data/memory.json
+2025-11-11 23:07:10,606 | [INFO] | plugin_manager | Loaded 'ai_agent'
+2025-11-11 23:07:10,609 | [INFO] | plugin_manager | Loaded 'ai_tools'
+2025-11-11 23:07:10,610 | [INFO] | plugin_manager | Loaded 'calculator'
+2025-11-11 23:07:10,610 | [INFO] | plugin_manager | Loaded 'currency_converter'
+2025-11-11 23:07:10,688 | [INFO] | plugin_manager | Loaded 'email_manager'
+2025-11-11 23:07:10,689 | [INFO] | plugin_manager | Loaded 'file_manager'
+2025-11-11 23:07:10,690 | [INFO] | plugin_manager | Loaded 'git_helper'
+2025-11-11 23:07:10,692 | [INFO] | plugin_manager | Loaded 'joke_teller'
+2025-11-11 23:07:10,693 | [INFO] | plugin_manager | Loaded 'movie_recommender'
+2025-11-11 23:07:10,695 | [INFO] | plugin_manager | Loaded 'music_player'
+2025-11-11 23:07:10,699 | [INFO] | plugin_manager | Loaded 'news_fetcher'
+2025-11-11 23:07:10,700 | [INFO] | plugin_manager | Loaded 'notes'
+2025-11-11 23:07:10,702 | [INFO] | plugin_manager | Loaded 'reminder'
+2025-11-11 23:07:10,804 | [INFO] | plugin_manager | Loaded 'system_control'
+2025-11-11 23:07:10,808 | [INFO] | plugin_manager | Loaded 'task_scheduler'
+2025-11-11 23:07:10,809 | [INFO] | plugin_manager | Loaded 'todo_list'
+2025-11-11 23:07:10,810 | [INFO] | plugin_manager | Skipped 'voice_assistant' (incompatible with Python 3.14)
+2025-11-11 23:07:10,811 | [INFO] | plugin_manager | Loaded 'weather'
+2025-11-11 23:07:10,869 | [INFO] | plugin_manager | Loaded 'web_search'
+2025-11-11 23:07:22,736 | [INFO] | main | User: hii
+2025-11-11 23:08:00,106 | [INFO] | main | User: /i like to suck dick
+2025-11-11 23:08:19,331 | [INFO] | main | User: i am horny
+2025-11-11 23:09:28,331 | [INFO] | main | User: open brave
+2025-11-11 23:09:47,534 | [INFO] | main | User: play a game with me
+2025-11-11 23:10:12,988 | [INFO] | main | User: private island
+2025-11-11 23:10:43,681 | [INFO] | main | User: travel anywhere
+2025-11-11 23:11:21,208 | [INFO] | main | User: speak a language
+2025-11-11 23:12:01,445 | [INFO] | main | User: talk to me in hindi
+2025-11-11 23:13:09,903 | [INFO] | main | User: can u generate images
+2025-11-11 23:13:46,984 | [INFO] | main | User: yes
+2025-11-12 12:10:57,749 | [INFO] | plugin_manager | Loaded 'ai_agent'
+2025-11-12 12:10:57,756 | [INFO] | plugin_manager | Loaded 'ai_tools'
+2025-11-12 12:10:57,757 | [INFO] | plugin_manager | Loaded 'calculator'
+2025-11-12 12:10:57,758 | [INFO] | plugin_manager | Loaded 'currency_converter'
+2025-11-12 12:10:57,835 | [INFO] | plugin_manager | Loaded 'email_manager'
+2025-11-12 12:10:57,837 | [INFO] | plugin_manager | Loaded 'file_manager'
+2025-11-12 12:10:57,839 | [INFO] | plugin_manager | Loaded 'git_helper'
+2025-11-12 12:10:57,841 | [INFO] | plugin_manager | Loaded 'joke_teller'
+2025-11-12 12:10:57,843 | [INFO] | plugin_manager | Loaded 'movie_recommender'
+2025-11-12 12:10:57,846 | [INFO] | plugin_manager | Loaded 'music_player'
+2025-11-12 12:10:57,848 | [INFO] | plugin_manager | Loaded 'news_fetcher'
+2025-11-12 12:10:57,851 | [INFO] | plugin_manager | Loaded 'notes'
+2025-11-12 12:10:57,854 | [INFO] | plugin_manager | Loaded 'reminder'
+2025-11-12 12:10:58,135 | [INFO] | plugin_manager | Loaded 'system_control'
+2025-11-12 12:10:58,138 | [INFO] | plugin_manager | Loaded 'task_scheduler'
+2025-11-12 12:10:58,140 | [INFO] | plugin_manager | Loaded 'todo_list'
+2025-11-12 12:10:58,141 | [INFO] | plugin_manager | Skipped 'voice_assistant' (incompatible with Python 3.14)
+2025-11-12 12:10:58,143 | [INFO] | plugin_manager | Loaded 'weather'
+2025-11-12 12:10:58,205 | [INFO] | plugin_manager | Loaded 'web_search'
+2025-11-12 12:11:27,169 | [INFO] | main | User: hello
+2025-11-12 12:12:17,892 | [INFO] | main | User: can you remember my name
+2025-11-12 12:12:45,894 | [INFO] | memory | Saved memory to data/memory.json
+2025-11-12 12:12:45,896 | [INFO] | memory | Saved memory to data/memory.json
+2025-11-12 12:25:28,551 | [INFO] | plugin_manager | Loaded 'ai_agent'
+2025-11-12 12:25:28,553 | [INFO] | plugin_manager | Loaded 'ai_tools'
+2025-11-12 12:25:28,554 | [INFO] | plugin_manager | Loaded 'calculator'
+2025-11-12 12:25:28,555 | [INFO] | plugin_manager | Loaded 'currency_converter'
+2025-11-12 12:25:28,617 | [INFO] | plugin_manager | Loaded 'email_manager'
+2025-11-12 12:25:28,619 | [INFO] | plugin_manager | Loaded 'file_manager'
+2025-11-12 12:25:28,621 | [INFO] | plugin_manager | Loaded 'git_helper'
+2025-11-12 12:25:28,623 | [INFO] | plugin_manager | Loaded 'joke_teller'
+2025-11-12 12:25:28,625 | [INFO] | plugin_manager | Loaded 'movie_recommender'
+2025-11-12 12:25:28,626 | [INFO] | plugin_manager | Loaded 'music_player'
+2025-11-12 12:25:28,628 | [INFO] | plugin_manager | Loaded 'news_fetcher'
+2025-11-12 12:25:28,629 | [INFO] | plugin_manager | Loaded 'notes'
+2025-11-12 12:25:28,631 | [INFO] | plugin_manager | Loaded 'reminder'
+2025-11-12 12:25:28,884 | [INFO] | plugin_manager | Loaded 'system_control'
+2025-11-12 12:25:28,889 | [INFO] | plugin_manager | Loaded 'task_scheduler'
+2025-11-12 12:25:28,892 | [INFO] | plugin_manager | Loaded 'todo_list'
+2025-11-12 12:25:28,892 | [INFO] | plugin_manager | Skipped 'voice_assistant' (incompatible with Python 3.14)
+2025-11-12 12:25:28,895 | [INFO] | plugin_manager | Loaded 'weather'
+2025-11-12 12:25:28,955 | [INFO] | plugin_manager | Loaded 'web_search'
+2025-11-12 12:25:45,550 | [INFO] | main | User: my name is shaurya gaur. remember me
+2025-11-12 12:26:29,604 | [INFO] | main | User: address me as n7gg4
+2025-11-12 12:26:48,663 | [INFO] | memory | Saved memory to data/memory.json
+2025-11-12 12:26:48,670 | [INFO] | memory | Saved memory to data/memory.json
+2025-11-12 12:26:53,667 | [INFO] | plugin_manager | Loaded 'ai_agent'
+2025-11-12 12:26:53,669 | [INFO] | plugin_manager | Loaded 'ai_tools'
+2025-11-12 12:26:53,670 | [INFO] | plugin_manager | Loaded 'calculator'
+2025-11-12 12:26:53,671 | [INFO] | plugin_manager | Loaded 'currency_converter'
+2025-11-12 12:26:53,742 | [INFO] | plugin_manager | Loaded 'email_manager'
+2025-11-12 12:26:53,743 | [INFO] | plugin_manager | Loaded 'file_manager'
+2025-11-12 12:26:53,746 | [INFO] | plugin_manager | Loaded 'git_helper'
+2025-11-12 12:26:53,747 | [INFO] | plugin_manager | Loaded 'joke_teller'
+2025-11-12 12:26:53,748 | [INFO] | plugin_manager | Loaded 'movie_recommender'
+2025-11-12 12:26:53,750 | [INFO] | plugin_manager | Loaded 'music_player'
+2025-11-12 12:26:53,752 | [INFO] | plugin_manager | Loaded 'news_fetcher'
+2025-11-12 12:26:53,753 | [INFO] | plugin_manager | Loaded 'notes'
+2025-11-12 12:26:53,754 | [INFO] | plugin_manager | Loaded 'reminder'
+2025-11-12 12:26:54,020 | [INFO] | plugin_manager | Loaded 'system_control'
+2025-11-12 12:26:54,025 | [INFO] | plugin_manager | Loaded 'task_scheduler'
+2025-11-12 12:26:54,028 | [INFO] | plugin_manager | Loaded 'todo_list'
+2025-11-12 12:26:54,030 | [INFO] | plugin_manager | Skipped 'voice_assistant' (incompatible with Python 3.14)
+2025-11-12 12:26:54,032 | [INFO] | plugin_manager | Loaded 'weather'
+2025-11-12 12:26:54,104 | [INFO] | plugin_manager | Loaded 'web_search'
+2025-11-12 12:27:07,346 | [INFO] | main | User: can you remember me?
+2025-11-12 12:29:06,576 | [INFO] | memory | Saved memory to data/memory.json
+2025-11-12 12:29:06,583 | [INFO] | memory | Saved memory to data/memory.json
